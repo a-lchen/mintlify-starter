@@ -1,6 +1,6 @@
 # Mintlify Starter Kit
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples includingsdfasfafa
+Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples includingsdfasfafsadfasdfadfasdfa
 
 - Guide pages
 - Navigation
