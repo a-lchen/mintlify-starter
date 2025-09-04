@@ -16,7 +16,7 @@ import SnippetIntro from '/snippets/snippet-intro.mdx';
   Any page in the `snippets` directory will be treated as a snippet and will not
   be rendered into a standalone page. If you want to create a standalone page
   from the snippet, import the snippet into another file and call it as a
-  component.
+  widget.
 </Note>
 
 ### Default export
@@ -75,13 +75,13 @@ import { myName, myObject } from '/snippets/path/to/custom-variables.mdx';
 Hello, my name is {myName} and I like {myObject.fruit}.
 ```
 
-### Reusable components
+### Reusable widgets
 
-1. Inside your snippet file, create a component that takes in props by exporting
-   your component in the form of an arrow function.
+1. Inside your snippet file, create a widget that takes in props by exporting
+   your widget in the form of an arrow function.
 
-```mdx snippets/custom-component.mdx
-export const MyComponent = ({ title }) => (
+```mdx snippets/custom-widget.mdx
+export const MyWidget = ({ title }) => (
   <div>
     <h1>{title}</h1>
     <p>... snippet content ...</p>
@@ -102,9 +102,9 @@ title: My title
 description: My Description
 ---
 
-import { MyComponent } from '/snippets/custom-component.mdx';
+import { MyWidget } from '/snippets/custom-widget.mdx';
 
 Lorem ipsum dolor sit amet.
 
-<MyComponent title={'Custom title'} />
+<MyWidget title={'Custom title'} />
 ```
